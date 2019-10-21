@@ -63,6 +63,7 @@ body {
 .number11 { --rotation: 330deg; }
 
 .hand {
+    width: 20px;
     position: absolute;
     background: white;
     align-self: center;
@@ -70,25 +71,27 @@ body {
     border-top-left-radius: 40%;
     border-top-right-radius: 40%;
     z-index: 11;
+    --rotation: 0;
+    transform: translateY(-50%) rotate(calc(var(--rotation) * 1deg));
 }
 
 .hour {
-    width: 20px;
+   
     height: 28%;
-    transform: translateY(-50%) rotate(0deg);;
+    
 }
 
 .minute {
-    width: 20px;
+   
     height: 42%;
-    transform: translateY(-50%) rotate(93deg);
+    
 }
 
 .second {
     background: yellow;
     width: 8px;
     height: 48%;
-    transform: translateY(-50%) rotate(73deg);
+    
 }
 
 .clock::after {
